@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator BMI - FITRI</h1>
+    </header>
+    <main>
+        <div class="main-container">
+        <div class="container-item">
+            </div>
+            <div>
+                <h2>Form BMI</h2>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan.
+                berat badan ideal juga menandakan kondisi tubuh yang sehat. Yuk, Hitung berat badanmu di Kalkulator BMI</p>
+                <section class ="container-form">
+                    <div>
+                    <label>Jenis Kelamin </label>
+                    <input type="radio" name="sex" id="sex-man"><label for="sex-man"></label>Pria</label>
+                    <input type="radio" name="sex" id="sex-woman"><label for="sex-woman"></label>Wanita</label>
+            </div>
+                <div>
+                    <label>berat badan (kg) </label><br/>
+                    <input type="number" class="form-item">
+                    <label>Usia (tahun) </label><br/>
+                    <input type="number">
+                    <label>Tinggi badan (cm) </label><br/>
+                    <input type="number">
+                </div>
+                 <button type="button" id="calucalte-button">Hitung BMI</button>
+                 <button type="button">Reset</button>
+                </section>
+
+                <h4> Anda memiliki berat badan berlebih</h4>
+                <button type="button">Download Hasil BMI</button>
+            </div>
+            <div>
+                <h2>Result</h2>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
