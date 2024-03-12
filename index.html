@@ -6,44 +6,99 @@
     <title>Calculator BMI</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Calculator BMI - FITRI</h1>
     </header>
     <main>
         <div class="main-container">
-        <div class="container-item">
-            </div>
-            <div>
-                <h2>Form BMI</h2>
-                <p>Body Mass Index (BMI) adalah cara menghitung berat badan idel berdasarkan tinggi dan berat badan. Yuk, Hitung berat badanmu di Kalkulator BMI</p>
+            <!-- Kalkulator BMI terdapat pada container-item -->
+        <div class="container-item"> 
+            <h2>KALKULATOR BMI</h2>
+            <p style="margin: 25px;"> Body Mass Index (BMI) adalah cara menghitung berat badan ideal berdasarkan tinggi dan berat badan. Yuk, Hitung berat badanmu di Kalkulator BMI</p>
                 <section class ="container-form">
                     <div>
-                    <label>Jenis Kelamin </label>
+                    <label>Jenis Kelamin </label><br>
                     <input type="radio" name="sex" id="sex-man"><label for="sex-man"></label>Pria</label>
                     <input type="radio" name="sex" id="sex-woman"><label for="sex-woman"></label>Wanita</label>
             </div>
                 <div>
-                    <label>berat badan (kg) </label><br/>
-                    <input type="number" class="form-item">
-                    <label>Usia (tahun) </label><br/>
-                    <input type="number">
-                    <label>Tinggi badan (cm) </label><br/>
-                    <input type="number">
-                </div>
-                 <button type="button" id="calucalte-button">Hitung BMI</button>
-                 <button type="button">Reset</button>
+                    <label><br>Usia (tahun) </label><br/>
+                    <input type="text" id="weight" class="form-item" ><br><span id="Berat badan Error,ulangi dengan benar"></span>
+                    <label for="weight"><br>berat badan (kg) </label><br/>
+                    <input type="text" id="height" class="form-item"><br><span id="Tinggi badan Error,ulangi dengan benar"></span>
+                    <label for="height"><br>Tinggi badan (cm) </label><br/>
+                <input type="text" class="form-item">
+                <button tupe="button" id="btn">Hitung BMI</button>
+                <button type="button1" id="rst">Reset</button></section>
+                <p id="output"></p>
+               
                 </section>
-
-                <h4> Anda memiliki berat badan berlebih</h4>
-                <button type="button">Download Hasil BMI</button>
+                <h3 style="text-align: left; margin: 22px;">Keunggulan Fitur</h3>
+                <ol type="1": style="text-align: left;">
+                    <li>Menghitung Berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+                
+                    <p style="margin: 25px;"> Kalkulator ini hanya boleh digunakan oleh orang dewasa
+                        (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan
+                        BMI ini)dan tidak ada tindakan yang harus diambil berdasarkan
+                        nilainya selain berkonsultasi dengan orang yang memenuhi syarat
+                        seperti dokter.
+                    </p>
+                
+                    <p style="margin: 25px;">Kalkulator akan memberikan anda gambaran tentang perbandingan berat
+                        badan Kamu dengan nilai umum. Indeks Massa Tubuh (atau BMI)
+                        dan tidak dihitunng sebagai berat badan kamu (dalam kilogram)dibagi dengan
+                        kuadrat tinggi badan kamu (dalam meter)atau BMI=Kg/M.
+                    </p>
+            </br>
+                    
+                
             </div>
             <div>
-                <h2>Result</h2>
+
+            <div class ="container-result">
+                <h2>HASIL</h2>
+                
+                <button type="button2">Download Hasil BMI</button>
+
+                <p>Anda berada dalam kategori Overweight atau badan berlebih.
+                Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang
+                dikonsumsi dan bero0lahraga.
+                jika BMI anda berada dalam kategori ini maka anda dianjurkan untuk menurunkan bera badan
+                hingga batas normal
+                </p>
+                <div>
+                    <a href="https://ahligizi.id/layanan/ahligizitalk/"><button>Konsultasi Ahli Gizi Via Aplikasi</button></a>        
+                <a href="https://ahligizi.id/shop/"><button>Registrasi Online Ahli Gizi</button></a> 
+            <div>
+                <p style="margin: 25px;"> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan 
+                    beresiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dn kekhawatiran Anda
+                    terkait dengan berat badan Anda.
+                </p> 
             </div>
-        </div>
+            <div>
+                <h3 style="text-align: left; margin: 22px;">Beberapa penyakit yang berasal dari kegemukan</h3>
+                <ol type="1": style="text-align: left;">
+                    <li>Diabetes</li>
+                    <li>Hipertensi</li>
+                    <li>Sakit Jantung</li>
+                    <li>Osteoarthritis</li>
+                </ol>
+            </div>
+                <a href="https://www.alodokter.com/konsultasi-dokter"><button>Konsultasi Dokter Via Aplikasi</button>
+                <a href="https://www.alodokter.com/aloshop"></a><button>Registrasi Online Sekarang</button>
+                <img src="assets/gglply.png">
+                <img src="assets/aply.png">
+            </div>
+        
+            
     </main>
-    <footer></footer>
+    
+    <footer><b>Hitungan BMI by Fitri Aprianti Fauziah @copyright 2024</b></footer>
     <script src="js/script.js"></script>
 </body>
 </html>
