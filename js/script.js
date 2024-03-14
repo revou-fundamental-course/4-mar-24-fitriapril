@@ -1,5 +1,5 @@
-let button = document.getElementById('btn');
-button .addEventListener ('click',() => {
+let btn = document.getElementById('btn');
+btn .addEventListener ('click',() => {
   const height = parseInt(document.getElementById ('height').value);
   const weight = parseInt(document.getElementById ('weight').value);
   const result = parseInt(document.getElementById ('output'));
